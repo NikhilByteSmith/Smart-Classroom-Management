@@ -11,10 +11,14 @@ function App() {
   return (
     <>
 
-      <Router>
-        <div className='flex h-screen'>
+      <Router className="flex">
+        
+        <div className='flex h-full bg-gradient-to-b from-purple-100 via-orange-50 to-transparent'>
+        <div className="fixed top-0 left-0 w-[1325px] h-full">
           <Sidebar />
-          <div>
+        </div>
+        <div className='flex-1 ml-[200px]'>
+
             <Topbar/>
             <Routes>
               <Route path="/" element={<Dashboard />} />
