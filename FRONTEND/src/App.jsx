@@ -6,6 +6,7 @@ import Sidebar from './Components/Sidebar';
 import Classes from './Pages/Classes';
 import Results from './Pages/Results';
 import Topbar from './Components/Topbar';
+import MyProfile from './Pages/MyProfile';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/curriculum" element={<Curriculum />} />
               <Route path="/classes" element={<Classes />} />
               <Route path="/results" element={<Results />} />
+              <Route path="/profile" element={<MyProfile />} />
             </Routes>
           </div>
         </div>
